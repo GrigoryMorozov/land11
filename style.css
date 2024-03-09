@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*шрифты*/
+
+@font-face {
+    font-family: 'Baron Neue';
+    font-weight: 400;
+    font-style: normal;
+    src:
+        url('fonts/Baron Neue/Baron Neue.otf') format('otf');        
+}
+@font-face{
+    font-family: 'Garet';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/garet/Garet-Book.ttf') format('ttf');
+}
+
+/*wrapper*/
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*шапка*/
+header{
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+
+/*навигация*/
+nav{
+    width: 100%;
+    background-color: black;
+
+
+}
+
+.nav-block{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2rem;
+}
+
+.nav-block-el{
+    list-style: none;
+}
+.nav-block-el-link{
+    text-decoration: none;
+    font-family: 'Garet', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    padding: 10px 5px;
+
+    transition: all .3s ease;
+}
+.nav-block-el+.nav-block-el{
+    margin-left: 30px;
+}
+.nav-block-el-link:hover{
+    color:black;
+    background-color: #ECB563;
+}
+
+
+/*блок hero*/
+.hero{
+    display: flex;
+    height: 400px;
+}
+
+.hero-left{
+    flex:2;
+    padding: 2rem 1rem;
+
+}
+.hero-left-box{
+    width: 80%;
+}
+
+.hero-left-h1{
+    text-transform: uppercase;
+    font-family: 'Baron Neue', 'Arial', sans-serif;
+    font-size: clamp(30px, 50%, 80px);
+    margin-bottom: 1rem;
+}
+.hero-left-p{
+    text-transform: uppercase;
+    font-family: 'Baron Neue', 'Arial', sans-serif;
+    font-weight: bold;
+   
+    font-size: clamp(18px, 50%, 30px);
+    padding-left: 50px;
+    margin-bottom: 1rem;
+
+}
+.hero-left-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 10px 20px;
+    color:black;
+    font-family: 'Baron Neue', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: clamp(14px, 50%, 22px);
+
+    border: 1px solid black;
+    background-color: #ECB563;
+    box-shadow: -4px 4px 2px black;
+    transition: all .3s ease;
+    margin-bottom: 1rem;
+}
+.hero-left-link:hover{
+    background-color: white;
+    box-shadow: -4px 4px 2px #ECB563;
+    border:1px solid #ECB563;
+}
+.hero-left-link:active{
+    transform: translate3d(2px, 2px, 0px);
+}
+.lamp{
+    position: relative;
+    left: 0px;
+    top:-75px;
+}
+.svg_boy{    
+    position: relative;
+    left: -50px;
+    top:20px;
+}
+.stage{
+    position: relative;
+    top:30px;
+    left:150px;
+}
+.svg_80{
+    position: relative;
+    top:-50px;
+    left:200px;
+}
+.hero-right{
+    flex:1;
+    background-image: url('img/hero.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*секция helper*/
+.helper-box{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+.helper-box::after{
+    content:'';
+    position: absolute;
+    
+    background-color: white;
+    bottom:-20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 512px solid transparent;
+    border-right: 512px solid transparent;
+    border-top: 50px solid black;
+    z-index: 1;
+
+}
+.helper-box-text{
+    color:white;
+    font-family: 'Baron Neue', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: clamp(16px, 50%, 30px);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .4px;
+    z-index: 3;
+}
+
+.helper-box-text:first-child{
+    margin-bottom: 1rem;
+}
