@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: 'Baron Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Baron/BaronNeue.otf) format('otf');
+       
+}
+@font-face {
+    font-family: 'Garet-Book';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/garet/Garet-Book.ttf) format('otf');
+       
+}
+
+$color1: #87B876;
+$color2: #A1A6CA;
+$color3: #ECB563;
+$color4: black;
+$color5: white;
+$wrap: 1024px;
+$clip_down: polygon(0.00% 0.00%,100.00% 0.00%,100.00% 80%,50.07% 100%,0.00% 80%);
+$clip_right: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+@mixin h1Fonts{
+    font-family: 'Baron Neue', 'Arial', sans-serif;
+    font-size: clamp(30px, 1vw, 50px);
+}
+@mixin h1Fonts600{
+    font-family: 'Baron Neue', 'Arial', sans-serif;
+    font-size: clamp(25px, 1vw, 40px);
+}
+@mixin h2Fonts{
+    font-family: 'Baron Neue', 'Arial', sans-serif;
+    font-size: clamp(16px, .5vw, 25px);
+}
+
+@mixin pFonts($prop){
+    font-family: 'Garet-Book', 'Arial', sans-serif;
+    font-size: clamp($prop, .5vw, 25px);
+}
+@mixin wrap{
+    max-width: $wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
