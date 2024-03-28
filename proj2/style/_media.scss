@@ -37,6 +37,11 @@
     .svg_watch{
         left: 10%;
     }
+    .about_foto-sub{
+        bottom: 32%;
+        text-align: center;
+        padding: 8px;
+    }
     
 }
 
@@ -61,7 +66,10 @@
     .svg_watch{
         display: none;
     }
-   
+    .about_foto-sub{
+        position: static;
+        margin: 15px 0 10px 0;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -176,7 +184,45 @@
     .svg_res{
         left: 10%;
         top: 68%;
-       }
+    }
+    .about{
+        margin-top: 30px;
+    }
+    .about_box{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .about_foto-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .about_foto{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid black;
+        box-shadow: 0 4px 8px 0 rgba(18, 19, 85, 0.596), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+
+    }
+    .about_foto-sub{
+        text-align: center;
+    }
+    .about_text{
+        padding-left: 0;
+        text-align: center;
+        ul{
+            list-style-position: inside;
+            margin-left:0;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+    }
+
 }
 
 

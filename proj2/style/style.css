@@ -220,6 +220,65 @@ img {
   left: 15%;
   transition: all .5s ease; }
 
+.about {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px; }
+
+.about_title {
+  text-align: center;
+  font-family: 'Baron Neue', 'Arial', sans-serif;
+  font-size: clamp(25px, 1vw, 40px);
+  text-transform: uppercase;
+  margin-bottom: 50px; }
+
+.about_box {
+  width: 85%;
+  margin: 0 auto;
+  display: flex; }
+
+.about_foto-box {
+  position: relative; }
+
+.about_foto-sub {
+  position: absolute;
+  bottom: 10%;
+  left: -5.5%;
+  z-index: 12;
+  width: 110%;
+  background-color: #ECB563;
+  padding: 12px;
+  box-shadow: -8px 8px 0px black; }
+
+.about_foto-name {
+  font-family: 'Baron Neue', 'Arial', sans-serif;
+  font-size: clamp(16px, 0.5vw, 25px);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px; }
+
+.about_foto-nameSub {
+  font-family: 'Garet-Book', 'Arial', sans-serif;
+  font-size: clamp(14px, 0.5vw, 25px); }
+
+.about_text {
+  padding-left: 50px; }
+  .about_text ul {
+    margin-left: 40px;
+    margin-bottom: 10px; }
+    .about_text ul li {
+      font-family: 'Garet-Book', 'Arial', sans-serif;
+      font-size: clamp(17px, 0.5vw, 25px);
+      margin-bottom: 5px; }
+
+.about_text-header {
+  font-family: 'Baron Neue', 'Arial', sans-serif;
+  font-size: clamp(16px, 0.5vw, 25px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
 @media screen and (max-width: 1000px) {
   .svg_arrow {
     left: 45%; }
@@ -250,7 +309,12 @@ img {
     top: 12%; }
 
   .svg_watch {
-    left: 10%; } }
+    left: 10%; }
+
+  .about_foto-sub {
+    bottom: 32%;
+    text-align: center;
+    padding: 8px; } }
 @media screen and (max-width: 750px) {
   .svg_boy {
     display: none; }
@@ -268,7 +332,11 @@ img {
     display: none; }
 
   .svg_watch {
-    display: none; } }
+    display: none; }
+
+  .about_foto-sub {
+    position: static;
+    margin: 15px 0 10px 0; } }
 @media screen and (max-width: 600px) {
   .nav_link {
     display: none; }
@@ -355,7 +423,41 @@ img {
 
   .svg_res {
     left: 10%;
-    top: 68%; } }
+    top: 68%; }
+
+  .about {
+    margin-top: 30px; }
+
+  .about_box {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px; }
+
+  .about_foto-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; }
+
+  .about_foto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(18, 19, 85, 0.596), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+  .about_foto-sub {
+    text-align: center; }
+
+  .about_text {
+    padding-left: 0;
+    text-align: center; }
+    .about_text ul {
+      list-style-position: inside;
+      margin-left: 0;
+      margin-bottom: 20px;
+      text-align: left; } }
 @media screen and (max-width: 320px) {
   .box {
     height: 250px; }

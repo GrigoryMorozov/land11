@@ -241,4 +241,74 @@ img{
 
 
 
+
+
+.about{
+    @include wrap;
+    margin-top: 60px;
+
+}
+.about_title{
+    text-align: center;
+    @include h1Fonts600;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.about_box{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+.about_foto-box{
+    position: relative;
+}
+
+.about_foto-sub{
+    position: absolute;
+    bottom: 10%;
+    left: -5.5%;
+    z-index: 12;
+    width: 110%;
+    background-color: $color3;
+    padding: 12px;
+
+    box-shadow: -8px 8px 0px black;
+}
+.about_foto-name{
+    @include h2Fonts;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.about_foto-nameSub{
+    @include pFonts(14px);
+}
+
+
+.about_text{
+    padding-left: 50px; 
+
+    ul{
+        
+        margin-left: 40px;
+        margin-bottom: 10px;
+        
+         li{
+             
+             @include pFonts(17px);
+             margin-bottom: 5px;
+ 
+         }
+     } 
+}
+.about_text-header{
+    @include h2Fonts;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    
+}
+
 @import 'media';
